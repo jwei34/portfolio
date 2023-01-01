@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+    <title>Rhode Island Trail Finder</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="redesign-styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700" />
+</head>
+
+<body>
+    <div class="row">
+        <!-- for hiding/showing images based on screen size, used: -->
+        <!-- https://getbootstrap.com/docs/4.0/utilities/display/ -->
+
+        <!-- hide on screens wider than sm -->
+        <div class="d-sm-none">
+            <div class="col-md-12">
+                <img class="image" src="media/trail-small.jpg" alt="map" class="img-fluid" max-width:100% />
+            </div>
+        </div>
+        <!-- Visible only on sm	 -->
+        <div class="d-none d-sm-block d-md-none">
+            <div class="col-md-12">
+                <img class="image" src="media/trail-small.jpg" alt="map" class="img-fluid" />
+            </div>
+        </div>
+
+        <!--Visible only on md, large & xl-->
+
+        <div class="col-lg-12">
+            <div class="d-none d-md-block">
+                <img class="image" src="media/trail.png" alt="trails" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-custom navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" href="#">Go Paddling</a>
+                    <a class="nav-item nav-link" href="#">Go Walking</a>
+                    <a class="nav-item nav-link" href="#">Outfitters & Gear</a>
+                    <a class="nav-item nav-link" href="#">About Us</a>
+                    <a class="nav-item nav-link" href="#">Stories</a>
+                    <a class="nav-item nav-link" href="#">Resources</a>
+                    <a class="nav-item nav-link" href="#">Donate Now!</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- for hiding/showing images based on screen size, used: -->
+        <!-- https://getbootstrap.com/docs/4.0/utilities/display/ -->
+        <h1 style="margin-top: 1em;">Rhode Island Trail Finder: Go for a Walk!</h1>
+        <p>These are the best places to take a walk, get outdoors, relax and enjoy nature in Rhode Island. Click on the
+            trail name for directions, information, and printable pdf trail maps. </p>
+        <div class="row">
+
+            <!--Visible only on xs-->
+            <div class="d-block d-sm-none">
+                <div class="col-md-12">
+                    <img class="image" src="media/hf-phone-partial.png" alt="map" class="img-fluid" />
+                </div>
+            </div>
+
+            <!-- Visible only on sm	 -->
+            <div class="d-none d-sm-block d-md-none">
+                <div class="col-md-12">
+                    <img class="image" src="media/hf-phone-partial.png" alt="map" class="img-fluid" />
+                </div>
+            </div>
+
+            <!--Visible only on md -->
+            <div class="d-none d-md-block d-lg-none">
+                <div class="col-md-12">
+                    <img class="image" src="media/map-full.png" alt="map" class="img-fluid" />
+                </div>
+            </div>
+            <div class="d-none d-md-block d-lg-none">
+                <div class="col-md-12">
+                    <img class="image" src="media/tablet-trails-list.png" alt="trails" class="img-fluid" />
+                </div>
+            </div>
+
+            <!--Visible only on large & xl-->
+
+            <div class="col-lg-6">
+                <div class="d-none d-lg-block">
+                    <img class="image" src="media/desktop-trails-list.png" alt="trails" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="d-none d-lg-block">
+                    <img class="image" src="media/map-half.png" alt="map" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+:root {
+	--background-light: #f4f2ec;
+	--dark-green: #264433;
+	--boba-light-brown: #c1905e;
+	--boba-light-yellow: #f3e0c4;
+	--boba-yellow: #ffb467;
+	--accent: #b16800;
+}
+
+/* formatting */
+h1,
+h2,
+h3 {
+	font-family: "DM Sans", sans-serif;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 16pt;
+	margin-bottom: 0%;
+}
+
+h1 a:link {
+	color: var(--accent);
+}
+
+h3,
+h4 {
+	font-weight: bold;
+	font-size: 12pt;
+	padding-top: 1em;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 12pt;
+	margin: 0;
+	background-color: var(--background-light);
+}
+
+p {
+	line-height: 20px;
+}
+
+li {
+	margin-bottom: 0.5em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* Layout */
+.header {
+	width: 100%;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #f4f2ec;
+}
+
+.menu-item a:hover {
+	color: var(--accent);
+}
+
+.nav-bar {
+	width: 70%;
+	margin: 0 auto;
+	padding-block: 0.1em;
+	padding-bottom: 1.5em;
+}
+
+.content-grid {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.column-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+}
+
+.column {
+	padding: 16px 25px 16px;
+	display: flex;
+	flex-direction: column;
+	border-style: dotted;
+	border-color: var(--dark-green);
+	border-radius: 0.5em;
+	/* background-color: var(--boba-light-yellow); */
+	width: 42.5%;
+}
+
+@media (max-width: 799px) {
+	.column {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+.image {
+	max-width: 100%;
+	max-height: 100%;
+	padding-top: 0em;
+	padding-bottom: 0.6em;
+}
+
+/* project 1 specific */
+.project1 {
+	color: var(--dark-green);
+}
+
+.project1 .header {
+	color: var(--background-light);
+	background: var(--dark-green);
+}
+.project1 .nav-bar {
+	color: var(--dark-green);
+}
+
+.suggestion {
+	margin: 0;
+}
+
+.changed {
+	margin-top: 6px;
+	margin-bottom: 0;
+}
+
+.sketches {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.videolink {
+	text-decoration: underline;
+	cursor: pointer;
+	color: var(--accent);
+}
+
+a {
+	text-decoration: underline;
+	cursor: pointer;
+	color: var(--accent);
+}

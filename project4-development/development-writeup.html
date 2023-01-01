@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="project4">
+
+<head>
+    <title>Development</title>
+    <link rel="stylesheet" href="../homestyles.css">
+    <meta name="csci1300 project 4: development" content="my assignment write up">
+    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:ital,wght@0,800' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700" />
+</head>
+
+<body>
+    <div class="content-grid">
+        <div class="header">
+            <div class="title">
+                <a href="../index.html">Jenny Wei</a>
+            </div>
+            <div class="right-links">
+                <a href="../index.html#work">Work</a>
+                <a href="../about.html">About</a>
+            </div>
+        </div> 
+        <div class="project-hero">
+            <img class="image" src="headerimg.png" alt="Thanksgiving-meal-app">
+        </div>
+        <div class="project-title"> 
+            <h1 style="margin-bottom:-1rem; padding-bottom:0rem;">Development</h1>
+            <h3>Using React to Develop a Thanksgiving Menu Builder</h3>
+        </div>
+    </div>
+    <div class ="navbar" style="color:white;"> 
+        <div class="menu-items" style="text-align: center;">
+            <a href="#intro">Introduction</a>
+            •&nbsp;
+            <a href="#usability">Usability Considerations</a>
+            •&nbsp;
+            <a href="#summary">Takeaways</a>
+        </div>
+    </div>
+    <div class="content-grid" id="intro">
+        <div>
+            <h2>Introduction</h2>
+            <h4>About the Project</h4>
+            <p>
+                The goal of this project was to build an interactive, list-based interface using React, an
+                open-source front-end JavaScript library for building user interfaces based on UI components. In
+                order to do this, I had to learn how to implement multiple interface components, as well as to tie
+                these components to internal data states.
+            </p>
+            <b>
+                Features of my application include:
+            </b>
+            <ul>
+                <li>4 filtering categories based on the type of dish an item is (Soup, Side, Main, Dessert)</li>
+                <li>An aggregator section that summarizes the dishes in the menu, including the names, quantities,
+                    unit costs, and total quantities.</li>
+                <li>12 item cards, each displaying:</li>
+                <ul>
+                    <li>Item image</li>
+                    <li>Its dish category</li>
+                    <li>Properties I aggregate & sort by</li>
+                    <li>Button that add to/remove from the aggregator</li>
+                </ul>
+            </ul>
+            <p>
+            <b><a href="https://peepingpenguin198.github.io/csci1300-development/"
+                style="color: #E77433;">Final React application:</a></b>
+            </p>
+            <a href="https://peepingpenguin198.github.io/csci1300-development/"><img class="image" src="app-screenshot.png" alt="Thanksgiving-meal-app" style="width:80%; border-style:groove;"></a>
+            <h4>Goal and Value of My Application</h4>
+            <p>
+                My application is a tool for building a Thanksgiving feast. It helps users calculate the total
+                preparation & cook time, as well as the total cost required by all the food they want to make. Thus,
+                this application can aid users plan ahead in a stressful feat of hosting a Thanksgiving meal.
+            </p>
+        </div>
+    </div>
+    <div class="content-grid" id="usability">
+        <h2>Usability Principles Considered</h2>
+        <h4>Learnability: How easy is it for users to accomplish basic tasks the first time they encounter the
+            design?</h4>
+        <p>
+            I decided to display a large header, image, and short welcome message when users first open the
+            page. These serve to communicate the purpose of this tool in a concise and visually pleasant way. I also made
+            sure to label all my buttons in an informative way, so that their function is clear. For
+            example:
+        <ul>
+            <li>
+                "Add to Menu" adds a dish to the menu, "+" increments and "-" decrements the unit counts in both
+                the Dishes and Menu Summary sections).
+            </li>
+            <li>
+                "Show" indicates filters are additive (Union) rather than finding the intersecton (N). Their
+                change in color upon clicking indicates whether they're on or off.
+            </li>
+            <li>
+                "Sort by" is a dropdown menu that allows users to select a sort type for the dishes displayed.
+                Ascending and descending sorting is available for all the 3 numeric properties each dish has
+                (Cost, Prep Time, Cook Time).
+            </li>
+        </ul>
+        </p>
+        <p>
+        <h4>Efficiency: Once users have learned the design, how quickly can they perform tasks?</h4>
+        Below the welcome section, I created a Dishes browser section and a Menu Summary section, which take
+        up 2/3 and 1/3 of the page respective on large screens. This allows users to both browse their
+        options for meals to cook see the summary of their chosen menu items, including how many units
+        they've added and the total cost, prep time, and cook time they require.
+        </p>
+        <h4>Errors: How many errors do users make, how severe are these errors, and how easily can they recover from
+            the errors?</h4>
+        <p>
+            By adding the "+" and "-" buttons in both the individual dish cards and the summary section, I allow
+            users to easily change the number of items they added to their menu in case they're experimenting
+            with
+            different combinations or added too few/many units of a dish.
+        </p>
+    </div>
+    <div class="content-grid" id="summary" style="padding-bottom: 50px;">
+        <h2>Project Takeaways</h2>
+        <p>
+            This project definetely pushed me to think about data structures and app development in new ways. It was my first interactive front-end development project (before I've only used HTML/CSS), and I found the learning curve for understanding the key features of React, such as components and state variables, and how they interact with each other quite steep. Still, I am pretty happy with how my application turned out, and I am excited to further improve my development skills with future projects.
+        </p>
+    </div>
+</body>
+
+</html>
