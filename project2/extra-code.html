@@ -1,0 +1,84 @@
+<!-- toggle! -->
+<button type="button" class="collapsible">
+    <b>1.</b> Confusing Site Title &amp; Navigation
+</button>
+<div class="expanded-content">
+    <ul>
+        <li>The cursor changes for all headers upon hover, but some aren't actually clickable. This is
+            poor
+            feedback as the cursor switch is usually associated with clickable buttons.</li>
+        <li>The page title ("Rhode Island Trail
+            Finder: Go for a Walk!") is inconsistent with the menu option (”Trail List/Trail Map”) and
+            the
+            browser tab title (”Explore Rhode Island…”).</li>
+        </p>
+        </li>
+    </ul>
+</div>
+<button type="button" class="collapsible">
+    <b>2.</b> Unstandardized Buttons
+</button>
+<div class="expanded-content">
+    <p style="padding-left:18px;">
+        There are several types of buttons, which makes it hard to learn what function each has.
+    </p>
+    <ul>
+        <li>"Go" & "Reset" are very default buttons and work as expected. </li>
+        <li>Pictorial type of trail buttons: At first look, these didn’t even look like buttons. I only
+            realized
+            that they can be used to filter trails after I read the description. Good design shouldn’t
+            require
+            this.</li>
+    </ul>
+</div>
+<button type="button" class="collapsible">
+    <b>3.</b> Inconsistent Dropdown Menu Functions
+</button>
+<div class="expanded-content">
+    <ul>
+        <li>Sort List By & Difficulty are both dropdowns, but one sorts and the other filters. I think
+            these
+            shouldn’t look the same bc their functions are a bit diffrent. </li>
+    </ul>
+</div>
+<button type="button" class="collapsible">
+    <b>4.</b> Poor Feedback of "Difficulty" Dropdown Menu
+</button>
+<div class="expanded-content">
+    <ul>
+        <li>The mechanism of the dropdown is confusing. Although the ‘Very Easy’ and ‘Easy’
+            options
+            seem to working correctly, filtering for only trails that have these words in them, the
+            ‘Moderate’
+            and ‘Difficult’ options look the same, with both include the full list of trails from ‘very
+            easy’ to
+            ‘difficult’. → can’t recognize </li>
+    </ul>
+</div>
+<button type="button" class="collapsible">
+    <b>5.</b> Disorganized & misleading use of icons
+</button>
+<div class="expanded-content">
+    <ul>
+        <li>Sizes aren’t uniform</li>
+        <li>Disorganized placement in table</li>
+        <li>Serve as buttons at top but just simple icons in the table</li>
+    </ul>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>

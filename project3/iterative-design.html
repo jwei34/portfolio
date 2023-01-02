@@ -1,0 +1,354 @@
+<!doctype html>
+<html class="project3">
+
+<head>
+	<title>Iterative Redesign for Kopa</title>
+	<link rel="stylesheet" href="../homestyles.css">
+	<meta name="CSCI 1300 Project 3: Iterative Design" content="assignment write up for submission">
+	<link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Nunito:ital,wght@0,800' rel='stylesheet'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700" />
+</head>
+
+<body>
+    <div class="content-grid">
+        <div class="header">
+            <div class="title">
+                <a href="../index.html">Jenny Wei</a>
+            </div>
+            <div class="right-links">
+                <a href="../index.html#work">Work</a>
+                <a href="../about.html">About</a>
+            </div>
+        </div> 
+        <div class="project-hero">
+            <img class="image" src="headerimg.png" alt="project-hero-image">
+        </div>
+        <div class="project-title"> 
+            <h1 style="margin-bottom:-1rem; padding-bottom:0rem;">Iterative Design</h1>
+            <h3>Rental & Roomate Finder: Designing a Website based on a Startup Concept</h3>
+        </div>
+    </div>
+        <div class ="navbar" style="color:white;"> 
+			<div class="menu-items" style="text-align: center;">
+				<a href="#intro">Introduction</a>
+				•&nbsp;
+				<a href="#lowfi">Low-Fi Sketches</a>
+				•&nbsp;
+				<a href="#hifi">High-Fi Mockups</a>
+				•&nbsp;
+				<a href="#annotation">Post-Critique Iteration</a>
+				•&nbsp;
+				<a href="#usertesting">User Testing</a>
+			</div>
+		</div>
+		<div class="content-grid" id="intro">
+			<div>
+				<h2>Introduction</h2>
+				</h4>
+				<p>
+					The goal of this project was to design an interactive interface around the concept of an emerging
+					startup, working in a team of four to create multiple iterations of low- and high-fidelity mockups.
+				</p>
+				<h4>Startup Context</h4>
+				<p>
+					Kopa is the marketplace for <b>monthly rentals and compatible housemates</b>, and the company’s
+					mission is to
+					enable people to browse rentals, find roommates, and book and pay for spaces in a one-stop-shop.
+					Currently the
+					start-up is still in operation, and that’s why we believe a redesign might bring some real-world
+					impact to
+					this company.
+				</p>
+				<p>
+					Our favourite quote from the company founder and CEO is: “We believe that exploration and community
+					make
+					people whole. Kopa exists to inspire people to get out of their comfort zones, to form lasting
+					relationships,
+					and to live more fulfilled lives.”
+				</p>
+			</div>
+		</div>
+		<div class="content-grid" id="lowfi">
+			<div>
+				<h2>Low-fidelity Sketches</h2>
+				<p>
+					To start our design process, we had a brainstorm session - each one of the group member
+					independently drew
+					their idea for the pages on a blank canvas. Here is what we got:
+				</p>
+				<img class="sketches" src="./signup.png" />
+				<img class="sketches" src="./browserental.png" />
+				<img class="sketches" src="./findroommate.png" />
+			</div>
+		</div>
+		<div class="content-grid" id="lowfifinal">
+			<h2>Finalized Low-fi Wireframe</h2>
+			<p style="margin-bottom: 0;">
+				After the initial individual sketching, we put our sketches together and brainstormed the best layout.
+				We made
+				our low-fi sketches into wireframes to guide our high-fidelity design process.
+			</p>
+			<img class="sketches" src="./lowfifinalized.png" />
+		</div>
+		<div class="content-grid" id="hifi">
+			<div>
+				<h2>Interactive Hi-Fi Mock Up: Iteration 1</h4>
+					<p>
+						Below is the first iteration of our high-fidelity Figma mockup. We created the 3 main screens of
+						Kopa: (renter) signup, browsing rentals, and finding roommates.
+					</p>
+					<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
+						src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FIj4khB3jnSR3dyKooob8Ew%2FIterative-Design-Hi-Fi%3Fnode-id%3D0%253A1%26t%3DYtRypmPyag1hTobZ-1"
+						allowfullscreen></iframe>
+					<h2>Critique Session (ft. Industry expert!)</h2>
+					<p>
+						During our critique session, we presented the first iteration of our hi-fi mockups (see above).
+						We had the opportunity to receive feedback on from not only fellow peers but also an
+						industry expert, Gifford Cheung, who is a Sr. UX Researcher @Nintendo (and ex-classmate of
+						Jeff!). Below, we highlighted some of the feedback we received from peers and Gifford.
+					</p>
+					<center>
+						<h4>General Feedback</h4>
+					</center>
+					<p>
+						Reviewers generally liked our UI (e.g. color palette) and design hierarchy for the 3 pages
+						(sign-up, browse
+						rentals, find roommates). Particularly, they thought the layouts of the sign-up and find
+						roommates pages were
+						fun and innovative.
+					</p>
+					<center>
+						<h4>Find Roommates Page Feedback</h4>
+					</center>
+					<div class="column-list">
+						<div class="column">
+							<p class="suggestion">
+								<b>Suggestion #1</b>: The page is a bit overwhelming without any guidance; clarification
+								about its
+								structure/algorithm would be helpful.
+							</p>
+							<p class="changed">
+								<b>What we changed</b>: Added welcome text briefly explaining our matching algorithm and
+								categories. This
+								also added some white space for improved hierarchy.
+							</p>
+						</div>
+						<div class="column">
+							<p class="suggestion">
+								<b>Suggestion #2</b>: At first, it is unclear that users can scroll horizontally in
+								addition to the
+								traditional vertical scroll.
+							</p>
+							<p class="changed">
+								<b>What we changed</b>: Added arrows on the right end of each category to indicate the
+								ability to scroll
+								horizontally.
+							</p>
+						</div>
+					</div>
+
+					<center>
+						<h4>Browse Rentals Page Feedback</h4>
+					</center>
+					<div class="column-list">
+						<div class="column">
+							<p class="suggestion">
+								<b>Suggestion #1</b>: Reviewers thought our ‘Bookmarked’ box at the bottom right was an
+								important
+								component but wasn’t prominent enough.
+							</p>
+							<p class="changed">
+								<b>What we changed</b>: Made the ‘Bookmarked’ box larger, expandible/collapsible, and
+								added a dark header
+								section that pops out from the map more. We also added a shortcut to bookmarked items in
+								the header, so it
+								is accessible at all times.
+							</p>
+						</div>
+						<div class="column">
+							<p class="suggestion">
+								<b>Suggestion #2</b>: Reviewers thought it'd be helpful to provide information about
+								what kinds of information
+								they can enter into the search bar.
+							</p>
+							<p>
+								<b>What we changed</b>: Added placeholder text to indicate possible entries for the area
+								search.
+							</p>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="content-grid" id="annotation">
+			<div>
+				<h2>Annotated Changes After Critique</h2>
+				<p>
+					After hearing the thoughts of Gifford and our peers during the critique session, we made changes to
+					our
+					high-fidelity mock up to incorporate the great suggestions reviewers made. Below are annotated
+					versions of our high-fidelity mock
+					ups.
+				</p>
+                <!-- Tab links -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openContent(event, 'set1-rentals')" id="defaultOpen1">
+					Browse Rentals Page</button>
+                    <button class="tablinks" onclick="openContent(event, 'set1-roommates')">Find Roommates Page</button>
+                </div>
+                <!-- Tab content -->
+                <div id="set1-rentals" class="tabcontent set1">
+					<img class="sketches" src="./rentalannotated.png"/>
+				</div>
+                <div id="set1-roommates" class="tabcontent set1">
+					<img class="sketches" src="./roommateannotated.png" />
+				</div>
+			</div>
+		</div>
+		<div class="content-grid" id="usertesting">
+			<h2>User Testing</h2>
+			<p>We gave users the following scenario, which we thought would encapsulate Kopa’s typical persona and user
+				motivation:
+			<ul>
+				<li> Imagine you are a college student who has an internship in NYC this upcoming summer. </li>
+				<li> You want to compare short-term rentals within your price range. </li>
+				<li> You also want to find quiet, outdoorsy roommates you can share your lease with. </li>
+			</ul>
+			We also made sure to let users know that this is not an actual website but an interactive mockup made on
+			prototyping software, so not all button functions are built out.
+			</p>
+			<!-- <h4>Final Prototype</h4> -->
+			<!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FIj4khB3jnSR3dyKooob8Ew%2FIterative-Design-Hi-Fi%3Fpage-id%3D0%253A1%26node-id%3D253%253A2447%26starting-point-node-id%3D253%253A2363%26scaling%3Dscale-down-width%26show-proto-sidebar%3D1" allowfullscreen></iframe> -->
+			<h4>Video Walkthrough</h4>
+			<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/ImU7TDA-W74"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+			<h4>User Testing Tasks</h4>
+			<p>
+				We gave users 3 tasks, which we thought would encapsulate the 3 key functionalities and screens of our
+				website. Each task was assessed according to the following 2 metrics, “Success” (Yes or No) and
+				“Difficulty”
+				(Very difficult to Very easy, with a 5-point rating scale)
+			</p>
+				<div class="tab">
+                    <button class="tablinks" onclick="openContent(event, 'set2-task1')" id="defaultOpen2">
+					Task 1: Sign Up</button>
+                    <button class="tablinks" onclick="openContent(event, 'set2-task2')">Task 2: Browse Rentals</button>
+					<button class="tablinks" onclick="openContent(event, 'set2-task3')">Task 3: Find Roommates</button>
+                </div>
+                <!-- Tab content -->
+                <div id="set2-task1" class="tabcontent set2">
+					<h4>Task 1: Sign up as a renter (Sign Up Page)</h4>
+					<p>
+					Users liked that they could indicate important preferences in the signup page, and saw that this
+					would help
+					inform Kopa’s roommate matching algorithm. This was in line with our expectations and even
+					surprised us that
+					they wouldn’t prefer more questions asking about their preferences and living habits.
+					</p>
+				</div>
+                <div id="set2-task2" class="tabcontent set2">
+					<h4> Task 2: Find 2 rentals within a price range of $500-2,500/month.(Browse Rentals Page)</h4> 
+				<ul>
+					<li>
+						Despite our disclaimer that buttons are not fully built-out, users complained that they couldn’t
+						fully use
+						the ‘Price’ dropdown and ‘Sort’ buttons. This resulted in one of the users stating that they
+						couldn’t
+						complete the task assigned. Perhaps, we should have done a clearer job explaining what could be
+						done or
+						built out those specific functions in our prototype better.
+					</li>
+					<li>
+						No one used the expandible bookmarked box. We think that this was likely because the save
+						listing
+						functionality wasn’t built out, as our intention was that saving a listing would automatically
+						add it to
+						their bookmarked items and expand the box.
+					</li>
+				</ul>
+				</div>
+				<div id="set2-task3" class="tabcontent set2">
+				<h4>Task 3: Find roommates that are quiet and like the outdoors. (Find Roommates Page)</h4>
+				<ul>
+					<li>Feedback was overall positive; users thought it was easy to browse contact cards and complete
+						their task
+						of finding roommates with specific interests and habits. </li>
+					<li>One user noted that the writing was a bit small. This is a valid accessibility issue we would
+						address
+						if/when building out the actual website.</li>
+				</ul>
+				</div>
+			<h4>User Testing Results & Potential Changes</h4>
+			<p>
+				Overall, the users thought our design was pretty intuitive to use and had a positive experience. They
+				also
+				liked its 2-in-1 function of browsing rentals and finding roommates. Some ​potential interface changes​​
+				we
+				would make based on your UserTesting results and feedback include:
+			<ul>
+				<li>
+					Increasing text size in listings & roommate cards for better accessibility and readability
+				</li>
+				<li>
+					Reconsidering the format and placement of ‘Bookmarked’ box for increased visibility, perhaps closer
+					to the
+					listings column.
+				</li>
+			</ul>
+			</p>
+			<p>
+				Links to 3 User Testing Videos:
+				<a class="videolink" target="_blank"
+					href="https://app.usertesting.com/v/75a12003-487f-489e-b73f-e2bac2e4bf7c?encrypted_video_handle=62d77ef4-10bd-41d6-96c4-d819ee46b0a0#!/notes&shared_via=link">User
+					1</a>,
+				<a class="videolink" target="_blank"
+					href="https://app.usertesting.com/v/75a12003-487f-489e-b73f-e2bac2e4bf7c?encrypted_video_handle=62d77ef4-10bd-41d6-96c4-d819ee46b0a0#!/notes&shared_via=link">User
+					2</a>,
+				<a class="videolink" target="_blank"
+					href="https://app.usertesting.com/v/f2c2f60c-b0f7-4b32-9889-8a2b0b22c7be?encrypted_video_handle=d7e6c966-a219-48b3-8544-6c31e6b1947e#!/notes&shared_via=link ">User
+					3</a>
+			</p>
+		</div>
+		<div class="content-grid" id="summary" style="padding-bottom: 50px;">
+			<h2>Project Summary</h2>
+			<p>
+				Overall, we really enjoyed having to work together to iteratively design a website around a startup
+				idea.
+				Since we all had summer internships in cities outside of our college town, we definitely resonated with
+				the pain
+				point Kopa's concept of combining short-term rentals with finding roommates addresses and hope the
+				founders
+				might find our designs helpful.
+			</p>
+		</div>
+
+<script>
+
+	function openContent(evt, contentName) {
+		// Declare all variables
+		var i, tabcontent, tablinks;
+
+		// Get all elements with class="tabcontent" and hide them
+		tabcontent = document.getElementsByClassName(contentName.split("-")[0]);
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+
+		// Get all elements with class="tablinks" and remove the class "active"
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		// Show the current tab, and add an "active" class to the button that opened the tab
+		document.getElementById(contentName).style.display = "block";
+		evt.currentTarget.className += " active";
+		}
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen2").click();
+		document.getElementById("defaultOpen1").click();
+</script>
+	</body>
+
+</html>
