@@ -32,6 +32,10 @@ h2 {
     margin-bottom: 0%;
  }
 
+a:link {
+    color: inherit;
+} 
+
 h1 a:link, a:visited {
     text-decoration: none;
     color: inherit; 
@@ -319,9 +323,31 @@ overflow: hidden;
     border-top: none;
   }
 
-
 .image {
     width: 100%;
+}
+
+.image-xs {
+    width: 30%;
+}
+
+.image-small {
+    height: 55vh;
+    width: auto;
+    margin: 0rem 0.5rem;
+    border: 0.8px ridge var(--dark-green);
+}
+
+.h-scroll-container {
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 1rem;
+    border-style:ridge;
+}
+
+.pcg .h-scroll-container {
+    height: min-content;
+    background-color: var(--light-green);
 }
 
 .column {
@@ -345,6 +371,7 @@ overflow: hidden;
 
 .card-image-container {
     border-radius: 0.5rem;
+    max-height: 25rem;
     overflow: hidden;
     vertical-align: top;
     background-color: #583B39;
@@ -400,6 +427,18 @@ overflow: hidden;
     padding: 10px 20px 10px;
 }
 
+.project1 .tab button {
+    color:white;
+    background-color: var(--boba-brown);
+}
+
+.project1 .tab button.active {
+    background-color: var(--boba-dark-brown);
+}
+.project1 .tabcontent {
+    padding: 0rem;
+}
+
 /* project 2 specific */
 
 .project2 .navbar {
@@ -426,8 +465,12 @@ overflow: hidden;
     transition: 0.5s ease-in-out;
   }
 
-.project3 .tab button:hover {
+.project3 .tab button {
     background-color: var(--light-green);
+}
+
+.project3 .tab button:hover {
+    background-color: var(--medium-green);
 }
 
 .project3 .tab button.active {
@@ -466,4 +509,21 @@ overflow: hidden;
 
 .project4 .navbar {
     background: var(--tg-dark-brown);
+}
+
+.pcg {
+    background: var(--light);
+}
+
+/* futi project specific */
+.futi {
+    background: var(--light);
+}
+
+.futi .navbar {
+    background-color: #d26f81;
+}
+
+.futi .h-scroll-container {
+    background-color: var(--light-green);
 }
