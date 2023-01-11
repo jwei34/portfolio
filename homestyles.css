@@ -527,3 +527,26 @@ overflow: hidden;
 .futi .h-scroll-container {
     background-color: var(--light-green);
 }
+
+/* yearbook specific */
+.yearbook {
+    background-color: var(--boba-light);
+}
+.yearbook .navbar {
+    background-color: #3a251d;
+}
+.yearbook .h-scroll-container {
+    background-color: var(--light);
+}
+
+.image-slideshow {    
+    margin: 0rem 0.5rem;
+    border: 0.8px ridge gray;
+}
+
+/* a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+} */
